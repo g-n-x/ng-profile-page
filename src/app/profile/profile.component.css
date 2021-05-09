@@ -1,0 +1,11 @@
+.bord {
+    border: 1px solid white;
+    margin: auto;
+    width: 80%;
+}
+
+.redondo {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+}
