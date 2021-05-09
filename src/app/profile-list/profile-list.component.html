@@ -1,11 +1,17 @@
-<div *ngFor="let user of users">
-    <ul>
-        <li>{{ user.username }}</li>
-        <li>{{ user.email }}</li>
-        <li>badges:</li>
-        <ul *ngFor="let badge of user.badges">
-            <li>{{ badge.name }}</li>
+<div *ngFor="let user of users" class="container">
+    <div class="row">
+        <div class="col-3">
+            <img class="redondo" src="../assets/profile-pic.gif">
+        </div>
+        <ul class="col-9">
+            <li>{{ user.username }}</li>
+            <li>{{ user.email }}</li>
+            <li>badges:</li>
+            <ul *ngFor="let badge of user.badges">
+                <li>{{ badge.name }}</li>
+            </ul>
         </ul>
-    </ul>
+    </div>
+    <button class="btn btn-primary m-3">View profile</button>
     <hr>
 </div>
