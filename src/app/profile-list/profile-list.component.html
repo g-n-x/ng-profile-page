@@ -1,1 +1,8 @@
-<p>profile-list works!</p>
+<ul *ngFor="let user of users">
+    <li>{{ user.username }}</li>
+    <li>{{ user.email }}</li>
+    <li>badges:</li>
+    <ul *ngFor="let badge of user.badges">
+        <li>{{ badge.name }}</li>
+    </ul>
+</ul>
