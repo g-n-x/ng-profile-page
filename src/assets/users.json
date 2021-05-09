@@ -7,5 +7,12 @@
             { "name": "friendly", "color": "yellow" },
             { "name": "VAC ban", "color": "red" }
         ]
+    },
+    {
+        "username": "Veritas",
+        "email": "veritatis@protonmail.ch",
+        "badges": [
+            { "name": "VAC ban", "color": "red" }
+        ]
     }
 ]

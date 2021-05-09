@@ -1,24 +1,19 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { IUser } from './user.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class UserService {
 
-  constructor() { }
+  private _url: string = "/assets/users.json";
 
-  getUsers() {
-    return [
-      {
-        "username": "Misterious User",
-        "email": "friezkona@protonmail.com",
-        "badges": [
-            { "name": "new user", "color": "blue" },
-            { "name": "friendly", "color": "yellow" },
-            { "name": "VAC ban", "color": "red" }
-        ]
-      }
-    ];
+  constructor(private http: HttpClient) { }
+
+  getUsers(): Observable<IUser[]> {
+    return this.http.get<IUser[]>(this._url);
   }
   
 }

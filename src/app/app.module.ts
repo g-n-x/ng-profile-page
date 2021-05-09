@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UserService } from './user.service';
 import { ProfileListComponent } from './profile-list/profile-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { ProfileListComponent } from './profile-list/profile-list.component';
     ProfileListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]

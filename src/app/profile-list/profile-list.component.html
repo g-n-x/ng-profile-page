@@ -1,8 +1,11 @@
-<ul *ngFor="let user of users">
-    <li>{{ user.username }}</li>
-    <li>{{ user.email }}</li>
-    <li>badges:</li>
-    <ul *ngFor="let badge of user.badges">
-        <li>{{ badge.name }}</li>
+<div *ngFor="let user of users">
+    <ul>
+        <li>{{ user.username }}</li>
+        <li>{{ user.email }}</li>
+        <li>badges:</li>
+        <ul *ngFor="let badge of user.badges">
+            <li>{{ badge.name }}</li>
+        </ul>
     </ul>
-</ul>
+    <hr>
+</div>
