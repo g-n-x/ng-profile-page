@@ -2,6 +2,7 @@
     {
         "username": "Misterious User",
         "email": "friezkona@protonmail.com",
+        "picture": "../assets/profile-pic.gif",
         "badges": [
             { "name": "new user", "color": "blue" },
             { "name": "friendly", "color": "yellow" },
@@ -11,6 +12,7 @@
     {
         "username": "Veritas",
         "email": "veritatis@protonmail.ch",
+        "picture": "../assets/profile-pic2.gif",
         "badges": [
             { "name": "VAC ban", "color": "red" }
         ]
