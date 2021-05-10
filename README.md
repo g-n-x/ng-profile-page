@@ -1,5 +1,5 @@
 # ng-profile-page
-profile page in angular
+profile page with routing in angular
 
 ## screenshot
 ![alt text](src/assets/screenshot-app-demo.png)
