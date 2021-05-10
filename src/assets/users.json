@@ -1,5 +1,6 @@
 [
     {
+        "id": 0,
         "username": "Misterious User",
         "email": "friezkona@protonmail.com",
         "picture": "../assets/profile-pic.gif",
@@ -10,6 +11,7 @@
         ]
     },
     {
+        "id": 1,
         "username": "Veritas",
         "email": "veritatis@protonmail.ch",
         "picture": "../assets/profile-pic2.gif",
